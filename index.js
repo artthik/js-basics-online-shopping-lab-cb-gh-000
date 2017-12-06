@@ -47,7 +47,7 @@ function total() {
 function removeFromCart(item) {
   for(let a = 0; a < cart.length; a++){
     if(cart[a].hasOwnProperty(item)){
-      cart = [...cart.slice(0, a-1),...cart.slice(a, cart.length)];
+      cart = [...cart.slice(0, a),...cart.slice(a, cart.length)];
       return cart;
     }
   }
